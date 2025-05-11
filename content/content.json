@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "headline": "Deploy AI Teams \u2014 Not More AI Tools",
+    "subhead": "Pattern Agentic helps you define, deploy, and scale full AI teams using purpose-driven specs and infrastructure-aware orchestration.",
+    "cta": "Request Early Access"
+  },
+  "why_pattern": {
+    "sectionTitle": "Why Pattern Agentic?",
+    "subhead": "From prototype to production \u2014 without the chaos. Pattern is the missing infrastructure layer for deploying, scaling, and managing real AI teams.",
+    "columns": {
+      "problems": {
+        "title": "The Problem with Today\u2019s AI Tooling",
+        "items": [
+          "Built for experimentation, not production",
+          "Fragile prototypes don\u2019t scale",
+          "Orchestration is glued together by hand",
+          "Public clouds force you into their stack",
+          "No unified view of cost, quality, or risk"
+        ]
+      },
+      "solutions": {
+        "title": "What Pattern Agentic Delivers",
+        "items": [
+          "Define agent teams in a deployable spec",
+          "Deploy across cloud, edge, or on-prem",
+          "Monitor teams by outcome, not just compute usage",
+          "Scale resources automatically based on real demand",
+          "Maintain visibility across all environments"
+        ]
+      }
+    },
+    "conclusion": "You\u2019re not just deploying agents. You\u2019re running an AI workforce that deserves the same clarity, performance, and reliability as any mission-critical system."
+  },
+  "intro": {
+    "heading": "Why Pattern?",
+    "body": "Today\u2019s AI tooling is built for experimentation \u2014 not deployment. Pattern Agentic makes it simple to go from a working agent prototype to a fully orchestrated, resource-optimized team in production."
+  },
+  "cards": [
+    {
+      "title": "Define Your AI Team",
+      "body": "Use a simple Pattern Spec to describe purpose-driven teams: support agents, engineering squads, or HR workflows.",
+      "icon": "✍️"
+    },
+    {
+      "title": "Choose Your Components",
+      "body": "Select models from any source, integrate tools, memory, RAG chains, and your own MCPs.",
+      "icon": "🔧"
+    },
+    {
+      "title": "Deploy Anywhere",
+      "body": "Deploy in the cloud of your choice, at the edge, or in your own data center \u2014 with native optimization for price and performance.",
+      "icon": "🚀"
+    },
+    {
+      "title": "Scale by KPIs",
+      "body": "Scale agent workloads based on real-world demand: ticket volume, dev task throughput, hiring funnel velocity.",
+      "icon": "📈"
+    }
+  ],
+  "agent_workload_management": {
+    "sectionTitle": "True Multi-Agent <em>Workload</em> Management",
+    "subhead": "From deployment to optimization, the Pattern platform ensures every model, agent, and tool runs exactly where it should \u2014 with full control, visibility, and continuous improvement.",
+    "blocks": [
+      {
+        "title": "Run the Right Model, on the Right Architecture, Every Time",
+        "body": "Pattern intelligently deploys any model \u2014 public, private, fine-tuned, or hybrid \u2014 across your preferred infrastructure. Whether you're using APIs, containers, or fully self-hosted frameworks, the system ensures the model runs on the right architecture with appropriate memory, GPU, and isolation \u2014 all configured in your pattern spec.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Built for Real-World Stacks",
+        "body": "Bring your orchestration logic, data pipelines, memory systems, and RAG setups. Pattern lets you connect to cloud-native services or self-managed systems with no vendor lock-in and clean, reusable specs. You define the composition \u2014 we deploy the environment.",
+        "icon": "🔗"
+      },
+      {
+        "title": "Smarter Resource Optimization",
+        "body": "Pattern monitors all AI infrastructure \u2014 from GPUs and TPUs to CPU-heavy inference nodes \u2014 and continuously rebalances workloads to optimize cost, latency, and throughput. Idle pods are consolidated. Hot workloads are burst-scaled. No ops engineer required.",
+        "icon": "🎯"
+      },
+      {
+        "title": "Impact-Based Autoscaling That Matches Business Demand",
+        "body": "Pattern doesn\u2019t scale just based on metrics like CPU or GPU usage. It scales based on results: customer wait times, completion quality, workflow latency, or job throughput. Each spec can define the conditions that matter most \u2014 and Pattern handles the rest.",
+        "icon": "⚖️"
+      },
+      {
+        "title": "Pattern Ops Agent: Always-On AI Operations",
+        "body": "The Pattern Ops Agent oversees your AI deployment 24/7 \u2014 monitoring agents, spotting anomalies, and surfacing insights proactively. The web console shows: Team-level visibility across cloud, edge, and on-prem; Detailed cost reports and usage heatmaps; Versioned specs and real-time audit trails; Suggested actions based on performance drift.",
+        "icon": "🔍"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Be Part of the Founding Circle",
+    "body": "We're inviting a small group of early testers, pilot partners, and investors to help shape Pattern Agentic. Join us early to get access and influence the roadmap.",
+    "formAction": "https://formspree.io/f/yourFormID",
+    "buttonText": "Join Early Access"
+  },
+  "footer": {
+    "contact": "founders@patternagentic.ai",
+    "copy": "\u00a9 2025 Pattern Agentic \u2014 Built by a scrappy team of infrastructure veterans."
+  }
+}
