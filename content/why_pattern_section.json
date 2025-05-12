@@ -1,0 +1,29 @@
+{
+  "why_pattern": {
+    "sectionTitle": "Why Pattern Agentic?",
+    "subhead": "From prototype to production \u2014 without the chaos. Pattern is the missing infrastructure layer for deploying, scaling, and managing real AI teams.",
+    "columns": {
+      "problems": {
+        "title": "The Problem with Today\u2019s AI Tooling",
+        "items": [
+          "Built for experimentation, not production",
+          "Fragile prototypes don\u2019t scale",
+          "Orchestration is glued together by hand",
+          "Public clouds force you into their stack",
+          "No unified view of cost, quality, or risk"
+        ]
+      },
+      "solutions": {
+        "title": "What Pattern Agentic Delivers",
+        "items": [
+          "Define agent teams in a deployable spec",
+          "Deploy across cloud, edge, or on-prem",
+          "Monitor teams by outcome, not just compute usage",
+          "Scale resources automatically based on real demand",
+          "Maintain visibility across all environments"
+        ]
+      }
+    },
+    "conclusion": "You\u2019re not just deploying agents. You\u2019re running an AI workforce that deserves the same clarity, performance, and reliability as any mission-critical system."
+  }
+}

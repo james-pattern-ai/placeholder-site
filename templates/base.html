@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pattern Agentic helps you define, deploy, and scale full AI teams using purpose-driven specs and infrastructure-aware orchestration." />
+    <meta property="og:title" content="Pattern Agentic - Deploy AI Teams" />
+    <meta property="og:description" content="Pattern Agentic helps you define, deploy, and scale full AI teams using purpose-driven specs and infrastructure-aware orchestration." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0A0A1A" />
+    <title>Pattern Agentic - Deploy AI Teams</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a href="#" class="nav-logo-link">
+        <img src="img/patternagentic_v3.png" alt="Pattern Agentic" class="nav-logo" />
+      </a>
+      <div class="nav-links">
+        <a href="#why-pattern" class="nav-link">Why Pattern?</a>
+        <a href="#approach" class="nav-link">Our Approach</a>
+        <a href="#workload-management" class="nav-link">Workload Management</a>
+        <a href="#cta" class="nav-link">Early Access</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>{{HERO_HEADLINE}}</h1>
+          <p class="hero-subhead">{{HERO_SUBHEAD}}</p>
+          <a href="#cta" class="cta-button">{{HERO_CTA}}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Pattern Section -->
+    <section id="why-pattern" class="why-pattern-section">
+      <div class="container">
+        <h2>{{why_pattern.sectionTitle}}</h2>
+        <p class="section-subhead">{{why_pattern.subhead}}</p>
+        <div class="columns-container">
+          <div class="column problems">
+            <h3>{{why_pattern.columns.problems.title}}</h3>
+            <ul>
+              {{#each why_pattern.columns.problems.items}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="column solutions">
+            <h3>{{why_pattern.columns.solutions.title}}</h3>
+            <ul>
+              {{#each why_pattern.columns.solutions.items}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <p class="section-conclusion">{{why_pattern.conclusion}}</p>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="why-pattern" class="intro-section">
+      <div class="container">
+        <h2>{{INTRO_HEADING}}</h2>
+        <p>{{INTRO_BODY}}</p>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="approach" class="cards-section">
+      <div class="container">
+        <h2>Our Approach</h2>
+        <div class="cards-container">
+          {{#each cards}}
+          <div class="card">
+            <h3><span class="card-icon">{{icon}}</span>{{title}}</h3>
+            <p>{{body}}</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Workload Management Section -->
+    <section id="workload-management" class="workload-section">
+      <div class="container">
+        <h2>{{{agent_workload_management.sectionTitle}}}</h2>
+        <p class="section-subhead">{{agent_workload_management.subhead}}</p>
+        <div class="workload-blocks">
+          {{#each agent_workload_management.blocks}}
+          <div class="workload-block">
+            <h3><span class="block-icon">{{icon}}</span>{{title}}</h3>
+            <p>{{body}}</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+      <div class="container">
+        <h2>{{CTA_HEADING}}</h2>
+        <p>{{CTA_BODY}}</p>
+        <form action="https://formspree.io/f/meoglznd" method="POST" class="cta-form">
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              class="cta-input"
+            />
+            <div class="form-feedback">Thanks! We'll be in touch soon.</div>
+          </div>
+          <button type="submit" class="cta-button">
+            <span class="button-text">Join Early Access</span>
+            <span class="button-success">✓</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p class="contact">Contact us: <a href="mailto:{{FOOTER_CONTACT}}">{{FOOTER_CONTACT}}</a></p>
+        <p class="copyright">{{FOOTER_COPY}}</p>
+      </div>
+    </footer>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator"></div>
+
+    <!-- Page Scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Scroll Indicator
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function() {
+          const st = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (st > lastScrollTop || st > window.innerHeight * 0.5) {
+            scrollIndicator.classList.add('hidden');
+          } else if (st === 0) {
+            scrollIndicator.classList.remove('hidden');
+          }
+          
+          lastScrollTop = st <= 0 ? 0 : st;
+        });
+
+        // Form Handling
+        const form = document.querySelector('.cta-form');
+        const formGroup = form.querySelector('.form-group');
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          
+          fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            if (response.ok) {
+              form.classList.add('success');
+              formGroup.classList.add('success');
+              form.reset();
+            } else {
+              throw new Error('Form submission failed');
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

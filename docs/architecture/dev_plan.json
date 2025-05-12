@@ -1,0 +1,59 @@
+{
+  "project": "Pattern Agentic Static Site",
+  "content_file": "content.json",
+  "build_script": "build/build.js",
+  "template_file": "templates/base.html",
+  "output_file": "dist/index.html",
+  "sections": [
+    {
+      "name": "Hero Section",
+      "prompt": "Implement the Hero section using content.json and base.html.",
+      "steps": [
+        "Add hero keys to content.json",
+        "Insert {{HERO_HEADLINE}}, {{HERO_SUBHEAD}}, {{HERO_CTA}} in base.html",
+        "Replace tokens in build.js using string replacement",
+        "Rebuild and preview dist/index.html"
+      ]
+    },
+    {
+      "name": "Intro Section",
+      "prompt": "Add an introduction section describing why Pattern Agentic exists.",
+      "steps": [
+        "Add intro keys to content.json",
+        "Insert {{INTRO_HEADING}}, {{INTRO_BODY}} in base.html",
+        "Replace tokens in build.js",
+        "Rebuild and verify section appears"
+      ]
+    },
+    {
+      "name": "Horizontal Card Section",
+      "prompt": "Build a horizontally scrollable section showing modular steps.",
+      "steps": [
+        "Add cards array to content.json",
+        "Insert {{CARDS}} token in base.html",
+        "Loop through content.cards and generate card divs in build.js",
+        "Rebuild and test scroll responsiveness"
+      ]
+    },
+    {
+      "name": "Email CTA",
+      "prompt": "Add a form to capture early access signups.",
+      "steps": [
+        "Add cta keys to content.json",
+        "Insert {{CTA_HEADING}}, {{CTA_BODY}}, {{CTA_FORM_ACTION}}, {{CTA_BUTTON_TEXT}} in base.html",
+        "Replace tokens in build.js",
+        "Rebuild and test form functionality"
+      ]
+    },
+    {
+      "name": "Footer",
+      "prompt": "Add footer with contact info and copyright.",
+      "steps": [
+        "Add footer keys to content.json",
+        "Insert {{FOOTER_CONTACT}}, {{FOOTER_COPY}} in base.html",
+        "Replace tokens in build.js",
+        "Rebuild and verify layout on all screens"
+      ]
+    }
+  ]
+}

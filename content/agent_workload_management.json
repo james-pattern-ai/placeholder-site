@@ -1,0 +1,32 @@
+{
+  "agent_workload_management": {
+    "sectionTitle": "How Pattern Agentic Manages Multi-Agent Workloads",
+    "subhead": "From deployment to optimization, the Pattern platform ensures every model, agent, and tool runs exactly where it should \u2014 with full control, visibility, and continuous improvement.",
+    "blocks": [
+      {
+        "title": "Run the Right Model, on the Right Architecture, Every Time",
+        "body": "Pattern intelligently deploys any model \u2014 public, private, fine-tuned, or hybrid \u2014 across your preferred infrastructure. Whether you're using APIs, containers, or fully self-hosted frameworks, the system ensures the model runs on the right architecture with appropriate memory, GPU, and isolation \u2014 all configured in your pattern spec."
+      },
+      {
+        "title": "Built for Real-World Stacks",
+        "body": "Bring your orchestration logic, data pipelines, memory systems, and RAG setups. Pattern lets you connect to cloud-native services or self-managed systems with no vendor lock-in and clean, reusable specs. You define the composition \u2014 we deploy the environment."
+      },
+      {
+        "title": "Smarter Resource Optimization",
+        "body": "Pattern monitors all AI infrastructure \u2014 from GPUs and TPUs to CPU-heavy inference nodes \u2014 and continuously rebalances workloads to optimize cost, latency, and throughput. Idle pods are consolidated. Hot workloads are burst-scaled. No ops engineer required."
+      },
+      {
+        "title": "Impact-Based Autoscaling That Matches Business Demand",
+        "body": "Pattern doesn\u2019t scale just based on metrics like CPU or GPU usage. It scales based on results: customer wait times, completion quality, workflow latency, or job throughput. Each spec can define the conditions that matter most \u2014 and Pattern handles the rest."
+      },
+      {
+        "title": "Control center for your AI workforce.",
+        "body": "Track your deployed AI teams in real time. Define KPIs that align with business goals and monitor them over time. Get alerted to agent or system health issues as they arise. Access a live infrastructure view \u2014 spanning clusters, services, APIs, and orchestration layers \u2014 and manage integrations with your tools, environments, and partners. From CRM and engineering platforms to public cloud, SaaS, and self-managed systems, it\u2019s your control plane for purpose-driven AI."
+      },
+      {
+        "title": "Continuous operational intelligence, built in.",
+        "body": "The Pattern AI Ops Agent continuously inspects your multi-agent workloads for signs of inefficiency, drift, or degradation. It identifies misconfigurations, unstable network paths, underperforming agents, and infrastructure-level issues \u2014 and responds with adjustments that reflect your business priorities. Think of it as a 24\u00d77 agentic co-pilot ensuring your AI deployments stay healthy, performant, and aligned \u2014 without waiting for human intervention."
+      }
+    ]
+  }
+}
