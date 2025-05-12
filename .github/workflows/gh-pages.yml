@@ -3,13 +3,32 @@ on:
   push:
     branches:
       - main
+
+# Add explicit permissions for GitHub token
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      # Add step to build the site
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: Build site
+        run: node build/build.js
+        
+      - name: Copy dist to root
+        run: cp -r dist/* .
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+          force_orphan: true

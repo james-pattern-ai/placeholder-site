@@ -1,0 +1,14 @@
+[
+  {
+    "title": "AI Workforce Management UI",
+    "subtitle": "Monitor your AI teams, define success, and manage your entire deployment ecosystem.",
+    "description": "Track your deployed AI teams in real time. Define KPIs that align with business goals and monitor them over time. Get alerted to agent or system health issues as they arise. Access a live infrastructure view \u2014 spanning clusters, services, APIs, and orchestration layers \u2014 and manage integrations with your tools, environments, and partners. From CRM and engineering platforms to public cloud, SaaS, and self-managed systems, it\u2019s your control plane for purpose-driven AI.",
+    "alt_header": "Control center for your AI workforce."
+  },
+  {
+    "title": "Pattern AI Ops Agent",
+    "subtitle": "Your autonomous operations team \u2014 always learning, optimizing, and intervening.",
+    "description": "The Pattern AI Ops Agent continuously inspects your multi-agent workloads for signs of inefficiency, drift, or degradation. It identifies misconfigurations, unstable network paths, underperforming agents, and infrastructure-level issues \u2014 and responds with adjustments that reflect your business priorities. Think of it as a 24\u00d77 agentic co-pilot ensuring your AI deployments stay healthy, performant, and aligned \u2014 without waiting for human intervention.",
+    "alt_header": "Continuous operational intelligence, built in."
+  }
+]
